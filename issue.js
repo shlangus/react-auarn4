@@ -27,10 +27,6 @@ const ResponsiveChild = () => {
   );
 };
 
-const Wrapper = ({ children }) => {
-  return <div>{children}</div>;
-};
-
 export const Issue = () => {
   return (
     <div>
