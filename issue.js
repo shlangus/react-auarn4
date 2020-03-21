@@ -1,11 +1,11 @@
 import React from "react";
-import { Mobile, Desktop, Tablet, Default } from "./responsive";
+import { Mobile, Default, Desktop, Tablet } from "./responsive";
 
 const Leaking = ({ children }) => {
   const ref = React.useRef();
   React.useEffect(() => {
     // do smth with ref
-    console.log(ref.current.clientWidth);
+    console.log(ref.current && ref.current.clientWidth);
   });
 
   return <div ref={ref}>{children}</div>
